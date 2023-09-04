@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Data Visualisation" />
+    <meta name="keywords" content="HTML, CSS, D3" />
+    <meta name="author" content="Michael Haryanto + Joseph Frigo" />
+
+    <title>Data Vis Project</title>
+
+    <!--To connect to d3 Library-->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <script src="prototype.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow&family=Cabin:wght@700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Pacifico&family=Raleway:wght@100&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .canvas {
+            justify-content: center;
+            margin: auto;
+        }
+
+        #chart {
+            justify-content: center;
+            text-align: center;
+            display: block;
+        }
+
+        #statetext{
+            fill: black;
+            font-size: 30px;
+            font-family: 'Barlow', sans-serif;
+            text-anchor: middle;
+        }
+
+        #lgatext {
+            fill: black;
+            font-size: 25px;
+            font-family: 'Barlow', sans-serif;
+            text-anchor: middle;
+        }
+
+        #lgacanvas {
+            justify-content: center;
+            text-align: center;
+            display: flex;
+        }
+
+        #xAxis.tick line{
+            visibility:hidden;
+            }
+        #chart1, #chart2 {
+            margin-bottom: 5px;
+            margin-top: 0;
+        }
+
+        table, th, td{
+            border: 1px solid black;
+            margin: 5px;
+        }
+
+        h1
+        {
+            font-family: 'Barlow', sans-serif;
+            font-size: 30px;
+            text-align: center;
+            padding-bottom: 2.5%;
+            padding-top: 3%;
+            margin: 0;
+            width: 100%;
+            color: white;
+            background-color: rgb(77, 117, 73);
+        }
+
+        body{
+            background-color:rgb(156, 189, 171);
+            margin: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>COS30045 - How Immigrants Congregate in Australia</h1>
+
+    <p id="chart"></p>
+
+    <div id="lgacanvas">
+        <p id="table" class="LGAchart"></p>
+        <p id="chart1" class="LGAchart"></p>
+        <p id="chart2" class = "LGAchart"></p>
+    </div>
+
+
+    <footer style="color: black;">COS30045 Data Visualisation <br>
+        Michael Haryanto (103841613) <br>
+        Joseph Frigo (104236113)
+    </footer>
+</body>
+
+</html>
