@@ -1,0 +1,1315 @@
+/*start of universal header, body, and footer css*/
+html {
+	scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    max-height: 100%;
+    /*background : image with the fixed scale when minimized*/
+    background : url(images/wallpaper4.jpg) no-repeat center center fixed;
+    background-size: cover;
+    /*overflow auto to enable scrolling*/
+    overflow: auto;
+
+    /*background image with gradient to bottom for the nav bar*/
+    background-image: linear-gradient(to bottom, rgba(68, 68, 68, 1), rgba(200, 200, 200, 0.2)), url(images/wallpaper4.jpg);
+    background-color: #F5D3C6;
+    /*narongdech's footer part*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body header {
+    width: 95%;
+    margin: auto;
+}
+
+body header nav .logo{
+    width: 200px;
+    cursor: pointer;
+}
+
+body header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+    padding: 5px 0;
+}
+
+body header nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/*stackoverflow hover*/
+body header nav ul li a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    transition: opacity 0.4s ease-in-out;
+    opacity: 1;
+}
+
+body header nav ul li a:hover {
+    opacity:0.5;
+}
+
+
+/*Narongdech's footer part*/
+.footer {
+    font-family: 'Montserrat', sans-serif;
+    z-index: 0;
+    width: 100%;
+    margin-top: auto;
+    padding-top: 60px;
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), grey);
+}
+
+.footer-flexbox{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.footer-flexbox-item{
+    display: block;
+    box-sizing: border-box;
+    width: 33.3%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-flexbox-content{
+    padding-left: 25%;
+}
+
+.footer-flexbox-content p{
+    font-size: 1.5em;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 2px;
+    text-align: left;
+    padding-left: 1.6em;
+}
+
+.footer-flexbox-content ul{
+    list-style: none;
+    display: inline-block;
+    text-align: left;
+}
+
+.footer-flexbox-content ul li a{
+    font-size: 0.95em;
+    color: white;
+    line-height: 2em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer .endfooter{
+    padding: 25%;
+    text-align: center;
+    margin-bottom: 0%;
+    justify-content: center;
+}
+
+#logo_spacing{
+      font-size: 2em;
+}
+
+@media (max-width: 800px) {
+    .footer-flexbox-item {
+      flex: 100%;
+    }
+  }
+
+.footer-flexbox-content ul li a:hover {
+    color: lightgrey;
+    padding: 0 30px;
+
+}
+
+.footer #endfooter #copyright{
+    font-size: 0.8em;
+    color: lightgrey;
+    text-align: center;
+    margin-top: 1em;
+    padding-top: 0.5em;
+    border-top: 1px solid lightgrey;
+}
+/*------------------------------------------------------------this section is for social media buttons*/
+.fa {
+    padding: 7px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 5.5px;
+}
+
+.fa:hover {
+    background: lightgrey;
+    color: white;
+}
+
+.fa-facebook {
+    background: white;
+    color: black;
+}
+
+.fa-twitter {
+    background: white;
+    color: black;
+}
+
+.fa-linkedin {
+    background: white;
+    color: black;
+}
+
+.fa-instagram {
+    background: white;
+    color: black;
+}
+
+/*end of the universal css header, body, and footer*/
+
+
+/*start of the index page*/
+body #indexbody {
+    margin: 0;
+}
+
+body #indexbody #indexbodyheading {
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    color: aliceblue;
+    font-size: 80px;
+}
+
+body #indexbody #indexbodyparagraph{
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+body #indexbody #youtube {
+    display: flex;
+    align-content: center;
+    width: 350px;
+    height: 300px;
+    margin: auto;
+    border: none;
+}
+/*end of the index page/*
+
+/*start of the product page */
+#productasidebar{
+    float: right;
+    width: 25%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    backdrop-filter: blur(7px);
+    margin-right: 5%;
+    margin-top: 64px;
+    padding: 0;
+}
+
+#productbody #asidetable{
+    width: 100%;
+    float: right;
+    max-width: 100%;
+    font-family: Cabin, sans-serif;
+    border: none;
+}
+
+.asidehyperlink {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1.2em;
+    display: block;
+}
+
+#asidetable td, #asidetable th{
+    padding-bottom: 10px;
+    text-align: center;
+    padding-top: 10px;
+    width: 100%;
+}
+#asidetable th{
+    background-color: #ad854866;
+    border-radius: 10px;
+    backdrop-filter: blur(7px);
+    margin-right: 5%;
+    margin-top: 0px;
+}
+
+#asidetable td:hover{
+    transition: 0.05s;
+    background-color: #e2eaa847;
+    border-radius: 10px;
+    backdrop-filter: blur(7px);
+    margin-right: 5%;
+}
+
+#contenttitle{
+    text-align: center;
+    color: white;
+    /*text-transform: uppercase;*/
+    font-family: monsterrat, sans-serif;
+    font-variant: small-caps;
+}
+
+#productbody hr{
+    width: 1500px;
+    max-width: 90%;
+    color: white;
+}
+#dslrcamera h1, #videocamera h1, #compactcamera h1, #mirrorlesscamera h1 {
+    color: white;
+    font-family: Monsterrat, sans-serif;
+    font-size: 1.5em;
+}
+
+/*.asidelist {
+    display: block;
+    list-style: none;
+    cursor: pointer;
+}*/
+#compactcamera {
+    width: 63%;
+    margin-left: 5%;
+}
+
+#compact1 {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    backdrop-filter: blur(7px);
+    display: inline-block;
+    margin: 0.5% 0px;
+    backdrop-filter: blur(7px);
+}
+
+#compactimg1 {
+    float: left;
+    width: 270px;
+    height: 270px;
+}
+#compact1 h2,#compact1 h3 {
+    clear: right;
+    padding: 0px 5% 0px 5%;
+    font-family: barlow, sans-serif;
+    color: white;
+}
+#compact1 h2 {padding-top: 40px;}
+#compact1 p {
+    clear: right;
+    padding: 0px 5% 30px 5%;
+    font-family: raleway, sans-serif;
+    color: white;
+    font-weight: 450;
+}
+
+#compact2 {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    backdrop-filter: blur(7px);
+    display: inline-block;
+    margin: 0.5% 0px;
+}
+
+#compactimg2 {
+    float: left;
+    padding-bottom: 0px;
+    width: 270px;
+    height: 270px;
+}
+
+#compact2 h2, #compact2 h3{
+    clear: right;
+    padding: 0px 5% 0px 5%;
+    font-family: barlow, sans-serif;
+    color: white;
+}
+#compact2 h2 {padding-top: 45px;}
+#compact2 p{
+    clear: right;
+    padding: 0px 5% 0px 5%;
+    font-family: raleway, sans-serif;
+    color: white;
+    font-weight: 450;
+}
+#mirrorlesscamera {
+    width: 63%;
+    margin-left: 5%;
+}
+
+#mirrorless1 {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    backdrop-filter: blur(7px);
+    display: inline-block;
+    margin: 0.5% 0px;
+}
+
+#mirrorimg1 {
+    float: left;
+    width: 270px;
+    height: 270px;
+}
+#mirrorless1 h2, #mirrorless1 h3 {
+    clear: right;
+    padding: 0px 5% 0px 5%;
+    font-family: barlow, sans-serif;
+    color: white;
+}
+#mirrorless1 h2 {padding-top: 50px;}
+#mirrorless1 p {
+    clear: right;
+    padding: 0px 5% 30px 5%;
+    font-family: raleway, sans-serif;
+    color: white;
+    font-weight: 450;
+}
+
+#mirrorless2 {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    backdrop-filter: blur(7px);
+    display: inline-block;
+    margin: 0.5% 0px;
+}
+
+#mirrorimg2 {
+    float: left;
+    width: 270px;
+    height: 270px;
+}
+#mirrorless2 h2, #mirrorless2 h3 {
+    clear: right;
+    padding: 0px 5% 0px 5%;
+    font-family: barlow, sans-serif;
+    color: white;
+}
+#mirrorless2 h2 {padding-top: 45px;}
+#mirrorless2 p {
+    clear: right;
+    padding: 0px 5% 30px 5%;
+    font-family: raleway, sans-serif;
+    color: white;
+    font-weight: 450;
+}
+#dslrcamera {
+    width: 63%;
+    margin-left: 5%;
+}
+
+#dslr1 {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    backdrop-filter: blur(7px);
+    display: inline-block;
+    margin: 0.5% 0px;
+}
+
+#dslrimg1 {
+    float: left;
+    width: 270px;
+    height: 270px;
+}
+#dslr1 h2,#dslr1 h3 {
+    clear: right;
+    padding: 0px 5% 0px 5%;
+    font-family: barlow, sans-serif;
+    color: white;
+}
+#dslr1 h2 {padding-top: 40px;}
+#dslr1 p {
+    clear: right;
+    padding: 0px 5% 30px 5%;
+    font-family: raleway, sans-serif;
+    color: white;
+    font-weight: 450;
+}
+
+#dslr2 {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    backdrop-filter: blur(7px);
+    display: inline-block;
+    margin: 0.5% 0px;
+}
+
+#dslrimg2 {
+    float: left;
+    width: 240px;
+    height: 240px;
+    padding: 20px 16px 0px 15px;
+}
+
+#dslr2 h2, #dslr2 h3{
+    clear: right;
+    padding: 0px 5% 0px 5%;
+    font-family: barlow, sans-serif;
+    color: white;
+}
+#dslr2 h2 {padding-top: 45px;}
+#dslr2 p{
+    clear: right;
+    padding: 0px 5% 60px 5%;
+    font-family: raleway, sans-serif;
+    color: white;
+    font-weight: 450;
+}
+#videocamera {
+    width: 63%;
+    margin-left: 5%;
+}
+
+#video1 {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    backdrop-filter: blur(7px);
+    display: inline-block;
+    margin: 0.5% 0px;
+}
+
+#videoimg1 {
+    float: left;
+    width: 270px;
+    height: 270px;
+}
+#video1 h2,#video1 h3 {
+    clear: right;
+    padding: 0px 5% 0px 5%;
+    font-family: barlow, sans-serif;
+    color: white;
+}
+#video1 h2 {padding-top: 40px;}
+#video1 p {
+    clear: right;
+    padding: 0px 5% 30px 5%;
+    font-family: raleway, sans-serif;
+    color: white;
+    font-weight: 450;
+}
+
+#video2 {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    backdrop-filter: blur(7px);
+    display: inline-block;
+    margin: 0.5% 0px;
+}
+
+#videoimg2 {
+    float: left;
+    width: 270px;
+    height: 270px;
+}
+#video2 h2,#video2 h3 {
+    clear: right;
+    padding: 0px 5% 0px 5%;
+    font-family: barlow, sans-serif;
+    color: white;
+}
+#video2 h2 {padding-top: 40px;}
+#video2 p {
+    clear: right;
+    padding: 0px 5% 30px 5%;
+    font-family: raleway, sans-serif;
+    color: white;
+    font-weight: 450;
+}
+
+#productbody article{
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    margin-bottom: 5px;
+}
+
+#productbody article:hover{
+    transform: scale(1.02);
+}
+/*end of the product page*/
+
+/*start of the inquiry page---------------------------------------------------------*/
+
+#enquirebody{
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 10%;
+    padding: 5%;
+    border-radius: 5px;
+    backdrop-filter: blur(7px);
+    margin-top: 2%;
+}
+.leftele {
+    float: left;
+    width: 50%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.rightele{
+
+    float: right;
+    width: 50%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+#enquirebody .enquirehead{
+width: 100%;
+text-align: center;
+font-family: 'Cabin', sans-serif;
+font-size: 2.5em;
+color: white;
+}
+
+#enquirebody .enquiresubhead{
+text-align: center;
+color: white;
+font-family: 'Cabin', sans-serif;
+font-size: 1.5em;
+}
+
+#enquirebody .flex_box{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin-top: -0.8em;
+}
+
+#enquirebody .flex_item{
+    width: 50%;
+}
+
+#enquirebody input[type=text], #enquirebody [type=email]{
+text-align: justify;
+  width: 95%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+#enquirebody select{
+    text-align: justify;
+  width: 95%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+#enquirebody fieldset {
+    margin-right: 25px;
+    height: 8.8em;
+    border-radius: 5px;
+    border-color: white;
+    margin-top: -0.8em;
+    padding-top: 0px;
+    line-height: 1.6;
+}
+#enquirebody fieldset h2 { line-height: 80%; }
+
+#enquirebody input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#enquirebody input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+#commentfield{
+    width: 94%;
+    height: 8.7em;
+}
+
+#enquirebody h2{
+    text-align: center;
+    color: white;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.5em;
+}
+#enquirebody h3, label{
+    text-align: left;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.95em;
+}
+
+#card{
+    width: 90%;
+    height: 4.6em;
+    margin-left: 2%;
+}
+
+#phonenumber{
+    margin-top: -1em;
+}
+
+#enquirebody .errmsg{
+    line-height: 0%;
+    color: red;
+    margin-top: 0%;
+    padding-top: 0%;
+    font-family: 'barlow', sans-serif;
+    font-size: 0.8em;
+
+}
+
+/*end of the inquiry page-------------------------------------------------------------------*/
+
+
+/*start of the about us page*/
+#members {color: #ffffff; font-size: 3em; text-align: center; font-family: 'Cabin', sans-serif;}
+#h-n-hr {padding: 2%; line-height: 2px;}
+.about-members
+{color: #000000; font-family: 'Barlow', sans-serif;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 15px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 5px;
+    backdrop-filter: blur(7px);
+
+}
+
+.about-tts, .about-tts th, .about-tts td{
+    border: 3px solid #000000;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table {width: 65%; float: left; margin-left: 25px;}
+.about-tt-h {font-size: 2.8em; color: #f0e78e; background-color: #F7C084; text-shadow: 0 0 10px #000000;}
+.ttcolumn {width: 18%; font-size: 1.2em; color: #f0e78e; background-color: #F7C084; text-shadow: 0 0 10px #000000;}
+.about-tt-TnD {font-size: 1.2em; background-color: #f0e78e;}
+.about-t1 {background-color: #F7C084;}
+.about-t2 {background-color: #f0e78e;}
+
+.COS10026 { background-color: #F5D3C6; line-height: 15px;}
+.COS10009 { background-color: #BAC9EE;}
+.COS10004 { background-color: #F7F2D6; line-height: 15px;}
+.TNE10006 { background-color: #BFE3EC;}
+.COS10025 { background-color: #CFF5CD; line-height: 15px;}
+.TNE10005 { background-color: #F4FDB1; line-height: 15px;}
+.COS20007 { background-color: #95FFF7; line-height: 15px;}
+
+.about-figures { margin-left: 30px;}
+.about-photos
+{
+    float: right;
+    padding: 20px;
+    border: 10px double rgb(240, 231, 142);
+    background-color: rgb(247, 192, 132);
+}
+.about-info {float: right; /*clear: top;*/ margin-right: 25px; margin-top: 25px; }
+dl { margin: 0; padding: 0; font-size: 1.15em; line-height: 50px; color: rgb(255, 255, 255);}
+  dt {
+    clear: left;
+	float: left;
+	text-align: left;
+    font-weight: bold;
+    color: rgb(240, 231, 142);
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+  }
+dt::after {content: ":";}
+dd {margin-left: 105px;}
+.about-emails {text-decoration: none; color: rgb(255, 255, 255);}
+.about-emails:hover
+{
+    color: rgb(240, 231, 142);
+    background-color: rgb(247, 192, 132);
+    border-radius: 25px;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+}
+/*end of the about us page*/
+
+/*Start of enhancements page*/
+.enhanceblock{
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 50px 10%;
+    padding: 30px 5% 5% 5%;
+    border-radius: 5px;
+    backdrop-filter: blur(7px);
+    margin-top: 2%;
+}
+#enhancebody h2{
+    color: white;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.5em;
+}
+#enhancebody h3{
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.1em;
+}
+#enhancebody .referencehyperlink{
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.75em;
+}
+#enhancelist ul{
+    list-style: none;
+    display: inline-block;
+    text-align: left;
+}
+#enhancelist ul li {
+    color: white;
+    line-height: 2em;
+    text-align: left;
+    text-decoration: none;
+}
+.column {
+  float: left;
+  width: 50%;
+}
+.enhanceparagraph {
+color: white;
+font-family: 'Barlow', sans-serif;
+font-size: 0.95em;
+}
+.enhanceblock .enhanceheader{
+    text-align: center;
+    font-size: 2.5em;
+}
+#enhanceyoutube{
+    float: left;
+    margin-right: 1.5em;
+    border: none;
+}
+
+.enhancehyperlink{
+    transition: opacity 0.3s ease-in-out;
+    text-decoration: none;
+    color: white;
+}
+
+.enhanceheader .enhancehyperlink:hover{
+    opacity: 0.5;
+}
+
+
+/*starat of Login Page*/
+#loginbody{
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 10%;
+    padding: 5%;
+    border-radius: 5px;
+    backdrop-filter: blur(7px);
+    margin-top: 5%;
+    width: 37%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 300px;
+    padding-bottom: 2%;
+}
+
+#loginbody #loginhead{
+    color: white;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 0%;
+}
+
+#loginbody #loginsubhead{
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.95em;
+    text-align: center;
+}
+
+#loginbody #register{
+    color: white;
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+    font-size: 0.8em;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#loginbody #logincopyright{
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-size: 0.75em;
+    display: block;
+}
+
+#loginbody #register #registerhyperlink{
+    text-decoration: none;
+    color: rgba(229, 234, 200, 0.8);
+
+}
+
+
+#loginbody input[type=text], #loginbody [type=password], #loginbody[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+#loginbody input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    display: block;
+}
+
+#loginbody input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+#loginbody .errmsg{
+    color: red;
+    margin-top: 0%;
+    padding-top: 0%;
+    font-family: 'barlow', sans-serif;
+    font-size: 0.9em;
+}
+/*end of login page*/
+
+/*start of register page*/
+#registerbody{
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 10%;
+    padding: 5%;
+    border-radius: 5px;
+    backdrop-filter: blur(7px);
+    margin-top: 5%;
+    width: 37%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 300px;
+    padding-bottom: 2%;
+}
+
+#registerbody #registerhead{
+    color: white;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 0%;
+}
+
+#registerbody #registersubhead{
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.95em;
+    text-align: center;
+}
+
+#registerbody h2{
+    color: white;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.5em;
+    margin: 0%;
+    padding: 5px 0px 8px 0px;
+}
+
+#registerbody h3, label{
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.95em;
+    margin: 0%;
+    padding: 5px 0px 8px 0px;
+}
+
+#registerbody input[type=text], #registerbody [type=password], #registerbody [type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+#registerbody input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    display: block;
+}
+
+#registerbody input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+#registerbody .errmsg{
+    color: red;
+    margin-top: 0%;
+    padding-top: 0%;
+    font-family: 'barlow', sans-serif;
+    font-size: 0.9em;
+}
+/*end of register page*/
+
+/*start of logout page*/
+#logoutbody{
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 10%;
+    /*padding: 5%;*/
+    border-radius: 5px;
+    backdrop-filter: blur(7px);
+    margin-top: 5%;
+    width: 37%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 300px;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+#logoutpicflixlogo{
+    justify-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+}
+
+#logoutpar{
+    color: white;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.2em;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#logoutbody input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    display: block;
+    width: 30%;
+    margin-bottom: 1%;
+}
+
+#logoutbody input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/*end of logout page*/
+
+/* start of payment page */
+/* #paymentsection {color: #000000; font-family: 'Barlow', sans-serif;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 45%;
+    margin: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    backdrop-filter: blur(7px);
+    padding: 2%;
+}
+
+#paymentsection h2, #enquire h3 {color: white;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+
+}
+
+.expi-n-cvv {width: 48%; display: inline-block;}
+#cvvpart {margin-left: 2.5%;}
+end of payment page */
+/*Start of receipt page----------------------------------------------------------*/
+.receiptbody{
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 15%;
+    padding: 5%;
+    border-radius: 5px;
+    backdrop-filter: blur(7px);
+    margin-top: 2%;
+}
+.receiptbody h2{
+    text-align: center;
+    color: white;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.5em;
+    width: 100%
+}
+.receiptbody p, label{
+    text-align: left;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1em;
+}
+
+#receiptlogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15em;
+
+}
+.re_left{
+    float: left;
+}
+.re_right{
+    float: right;
+
+}
+.right{
+    float: right;
+    text-align: right;
+}
+#extension{
+    /*margin-top: -13em;*/
+    margin-top: -14.5%;
+}
+.re_body{
+    display: flex;
+    flex-direction: row;
+}
+.re_item{
+    width: 50%;
+    text-align: center;
+}
+#exit{
+    margin-left: 35%;
+    margin-top: -1.1em;
+}
+/*end of receipt page*/
+
+/* manager css start*/
+.manager-sections{
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 10%;
+    margin-top:2%;
+    margin-bottom: 2%;
+
+    padding: 5%;
+    padding-top: 2%;
+    border-radius: 5px;
+    backdrop-filter: blur(7px);
+}
+
+.manager-sections h2{
+    text-align: center;
+    color: white;
+    font-family: 'Cabin', sans-serif;
+    font-size: 2em;
+}
+
+.manager-sections legend h2 { font-size: 1.5em;}
+
+
+
+.manager-eachinput{
+    font-size: 1em;
+    line-height: 0%;
+}
+
+#manager-section-searchorder #manager-eachinput-inline{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin-top: -0.9em;
+}
+
+#manager-eachinput-inline .manager-eachinput {
+    width: 30%;
+    padding: 2%;
+
+}
+
+
+
+
+.manager-sections input[type = text], .manager-sections input[type= number], .manager-sections select{
+    text-align: justify;
+   width: 100%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+   margin-top: 0;
+   margin-bottom: 12px;
+ }
+
+#manager-section-updateorder select  { width: 50%}
+
+#manager-inputleft {
+    float: left;
+    width: 50%;
+    clear: top;
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+#manger-inputright {
+
+    float: right;
+    width: 50%;
+    margin-left: 10%
+
+
+    /* margin-top: 2em;
+    margin-bottom: 2em; */
+}
+
+#managerpage{
+    min-width: max-content;
+}
+
+.manager-eachinput h3{
+    text-align: left;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.95em;
+}
+
+.manager-eachinput p{
+    text-align: left;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.95em;
+}
+
+.manager-sections input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+.manager-sections input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+#managerpage fieldset{
+    border-color: white;
+}
+.sortby{
+    clear: left;
+}
+
+.manager-table{
+    width: 98%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: 0%;
+    margin-top: -1.5em
+}
+
+
+#manager-table, #manager-table th, #manager-table td{
+    border-collapse: collapse;
+    text-align: center;
+
+}
+#manager-t-querysearch, #manager-t-sortproduct, #manager-t-pending{
+    margin-top:0%;
+}
+
+.manager-t-colorcol{ background-color: #f0e78e;}
+
+
+
+.manager-table th {width: 13%; background-color: #F7C084;}
+
+
+#manager-section-searchorder .errmsg{
+    line-height: 0%;
+    color: red;
+    margin-top: 0%;
+    padding-top: 0%;
+    font-family: 'barlow', sans-serif;
+    font-size: 0.9em;
+
+}
+
+.manager-table{
+    width: 98%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: 0%;
+    margin-top: -1.5em;
+}
+/* manager css end*/
