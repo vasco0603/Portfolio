@@ -1,0 +1,1 @@
+Gosu.draw_rect(1, 1, 7, 3, Gosu::Color::BLUE, ZOrder::TOP, mode=:default)
